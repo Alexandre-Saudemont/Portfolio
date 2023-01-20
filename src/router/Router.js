@@ -7,7 +7,7 @@ import Projects from "../Components/Projects/Projects.js"
 // Creation du routeur pour gérer les différentes pages du site
 const router = createBrowserRouter([
     {
-        // La page d'acceuil qui a pour enfin les pages Projects et AboutMe
+        // La page d'acceuil qui a pour enfant les pages Projects et AboutMe
         path: "/",
         element: <App />,
         children: [

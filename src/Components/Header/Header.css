@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    padding-top: 0.8rem;
+}
+
+.header-title{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    
+}
+
+.header-menuburger {
+    position: fixed;
+    width: 3rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    
+}
+
+.header-menuburger:hover{
+    cursor: pointer;
+}
