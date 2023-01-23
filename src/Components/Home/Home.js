@@ -1,10 +1,21 @@
 import React from 'react';
-
+import './Home.css';
+import hair from "../../asset/img/hair.jpg";
+import github from "../../asset/img/github.png"
+import linkedin from "../../asset/img/linkedin.png"
 function Home() {
+
     return (
-        <div>
-            <p>Je suis dans le composent Acceuil</p>
-        </div>
+        <section className='home'>
+            <img src={hair} alt="hair not found" className='home-profile-pic' />
+            <h1 className='home-title'>Alexandre Saudemont</h1>
+            <p className='home-description'>Je suis un développeur FullStack JavaScript</p>
+            <ul className='home-links'>
+                <li><img src={github} alt="github icon" className='home-github' /></li>
+                <li><img src={linkedin} alt="linkedin icon" className='home-linkedin' /></li>
+                <li></li>
+            </ul>
+        </section>
     );
 }
 

@@ -1,0 +1,32 @@
+.home{
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 94.5vh;
+}
+
+.home-profile-pic{
+    width: 20rem;
+}
+
+.home-title{
+    font-size: 1.5rem;
+   
+}
+
+.home-links{
+    display: flex;
+}
+
+.home-github{
+    width: 3rem;
+}
+
+.home-linkedin{
+    width: 2.7rem;
+}
+
