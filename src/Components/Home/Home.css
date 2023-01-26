@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     height: 94.5vh;
+    background-color: aqua;
 }
 
 .home-profile-pic{
@@ -24,6 +25,7 @@
 
 .home-github{
     width: 3rem;
+    border-color: yellow 2px;
 }
 
 .home-linkedin{

@@ -9,7 +9,7 @@ import Home from './Components/Home/Home';
 
 function App() {
   return (
-    <main>
+    <main className='main'>
       <Header />
       <Home />
       <Outlet />

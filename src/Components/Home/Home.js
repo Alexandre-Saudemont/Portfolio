@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css';
 import hair from "../../asset/img/hair.jpg";
-import github from "../../asset/img/github.png"
-import linkedin from "../../asset/img/linkedin.png"
+import github from "../../asset/img/github-mark.svg"
+import linkedin from "../../asset/img/linkedin-mark.svg"
 function Home() {
 
     return (
