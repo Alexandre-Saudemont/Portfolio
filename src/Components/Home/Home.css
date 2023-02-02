@@ -1,34 +1,43 @@
 .home{
     margin: auto;
-    width: 85%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 94.5vh;
-    background-color: aqua;
-}
-
-.home-profile-pic{
-    width: 20rem;
+    height: 95vh;
+    background-color: lightcyan
 }
 
 .home-title{
-    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
    
 }
 
+.home-profile-pic{
+    width: 15rem;
+    border-radius: 25rem;
+}
+
+.home-description{
+    font-size: 1.3rem;
+    margin: 5rem
+}
+
 .home-links{
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .home-github{
     width: 3rem;
-    border-color: yellow 2px;
+   
 }
 
 .home-linkedin{
     width: 2.7rem;
+    margin-left: 2rem;
 }
 

@@ -7,17 +7,18 @@ import Header from "../Components/Header/Header.js"
 // Creation du routeur pour gérer les différentes pages du site
 const router = createBrowserRouter([
     {
-        // La page d'acceuil qui a pour enfant les pages Projects et AboutMe
+
         path: "/",
         element: <App />,
 
-        children: [
-            {
-                path: "Projects",
-                element: <Projects />
-            },
-
-        ]
+    },
+    {
+        path: "Projects",
+        element:
+            <>
+                <Header />
+                <Projects />
+            </>
     },
     {
         path: "AboutMe",
