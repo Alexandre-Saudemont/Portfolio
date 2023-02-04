@@ -28,8 +28,7 @@ const router = createBrowserRouter([
                 <AboutMe />
 
             </>
-
-    }
+    },
 
 ])
 
