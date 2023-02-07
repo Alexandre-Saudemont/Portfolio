@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import hair from "../../asset/img/hair.jpg";
+import hair from "../../asset/img/profile-picV2.jpg";
 import github from "../../asset/img/github-mark.svg"
 import linkedin from "../../asset/img/linkedin-mark.svg"
 function Home() {

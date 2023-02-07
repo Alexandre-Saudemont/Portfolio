@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import menuburger from "../../asset/img/menuburger.png";
+import menuburger from "../../asset/img/menu-open.svg";
 import menuclose from "../../asset/img/menu-close.svg"
 import './Header.css';
 import NavBar from '../NavBar/NavBar';
@@ -17,7 +17,7 @@ function Header() {
         <>
             <header className='header'>
                 <h1 className='header-title'>Portfolio</h1>
-                {/* l'idée serait de faire un affichage conditionnel. Si j'ai cliqué, alors j'affiche la croix pas le burger, sinon j'affiche le burger, pas la croix. ToogleMenu ? une condition : l'autre condition */}
+                {/* Affichage conditionnel. Si j'ai cliqué, alors j'affiche la croix pas le burger, sinon j'affiche le burger, pas la croix. mon state  ? ma condition : l'autre condition */}
                 {toggleMenu ?
                     <img src={menuclose} className="header-menuburger-close" alt="menu burger close" onClick={onClickToggleMenu} />
                     :
@@ -27,7 +27,6 @@ function Header() {
             valeur en true graçe au "!" qui fait l'inverse du toggleMenu (donc l'inverse de false) */}
             </header>
             {/* Affichage conditionnel : Si  mon toggleMenu est true alors, j'affiche la NavBar */}
-
             {toggleMenu &&
                 <NavBar />
             }

@@ -1,9 +1,10 @@
+@import url("../../asset/css/var.css");
+
 .aboutme {
-    background-color: lightgreen;
+    background-color: var(--color-background-medium);
     width: 100%;
     margin: auto;
-    height: 95vh;
-    
+    height: 100%;
 }
 
 .aboutme-title{

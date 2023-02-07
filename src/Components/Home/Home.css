@@ -1,3 +1,5 @@
+@import url("../../asset/css/var.css");
+
 .home{
     margin: auto;
     text-align: center;
@@ -5,24 +7,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-    background-color: lightcyan
+    height: 100%;
 }
 
 .home-title{
     margin-bottom: 3rem;
     font-size: 1.7rem;
-   
+    color: var(--color-text);
 }
 
 .home-profile-pic{
     width: 15rem;
-    border-radius: 25rem;
+    border-radius: 50%;
+       
 }
 
 .home-description{
     font-size: 1.3rem;
-    margin: 5rem
+    margin: 5rem;
+    color: var(--color-text);
 }
 
 .home-links{
