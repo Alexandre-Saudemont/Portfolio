@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import menuburger from "../../asset/img/menu-open.svg";
-import menuclose from "../../asset/img/menu-close.svg"
+import menuburger from "../../asset/img/menu-open-color.svg";
+import menuclose from "../../asset/img/menu-close-color.svg"
 import './Header.css';
 import NavBar from '../NavBar/NavBar';
 

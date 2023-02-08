@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css";
 
-export const Contact = () => {
+function Contact() {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -19,13 +19,14 @@ export const Contact = () => {
 
     return (
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <label className='contact-label' for="name">Name</label>
-            <input className='contact-input' type="text" id="name" placeholder='M' />
-            <label className='contact-label' for="email">Email</label>
+            <p className='contact'>Me contacter :</p>
+
+            <input className='contact-input' type="text" id="name" placeholder='Nom' />
+
             <input className='contact-input' type="email" id="email" placeholder='Exemple@gmail.com' />
-            <label className='contact-label' for="message">Message</label>
-            <textarea className='contact-input' name="message" />
-            <input type="submit" if="message" value="Send" />
+
+            <textarea className='contact-input' name="message" rows="8" placeholder='Message' />
+            <input type="submit" if="message" value="Envoyer" />
         </form>
     );
 };

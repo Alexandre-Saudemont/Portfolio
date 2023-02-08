@@ -2,19 +2,31 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem auto;
-    width: 60%;
+    margin: auto;
+    width: 70%;
 
+}
+
+.contact{
+    color: var(--color-text);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-top: 3rem;
+    margin: 2rem auto;
 }
 
 .contact-label{
     align-self: flex-start;
+    color: var(--color-text);
 
 }
 
 .contact-input{
     width: 100%;
     margin-top: 0.3rem;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+
 }
 

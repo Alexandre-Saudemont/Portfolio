@@ -16,6 +16,9 @@ function NavBar() {
                     <NavLink className='navbar-navlink' to="/AboutMe">
                         About me
                     </NavLink>
+                    <NavLink className='navbar-navlink' to="/Contact">
+                        Contact
+                    </NavLink>
                 </ul>
             </nav>
         </div>
