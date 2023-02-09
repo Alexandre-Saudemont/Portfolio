@@ -31,7 +31,7 @@
 .header-menuburger-close {
     position: fixed;
     width: 2.8rem;
-    top: 0.5rem;
+    top: 0.5 rem;
     right: 0.6rem;
     
     -webkit-animation: flip-in-diag-2-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

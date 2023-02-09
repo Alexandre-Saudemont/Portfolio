@@ -2,31 +2,27 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: auto;
     width: 70%;
+    height: 100%;
 
 }
 
-.contact{
+.contact-p{
     color: var(--color-text);
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-    padding-top: 3rem;
-    margin: 2rem auto;
-}
-
-.contact-label{
-    align-self: flex-start;
-    color: var(--color-text);
-
+    font-size: 1.7rem;
+    margin: 2rem;
+    
 }
 
 .contact-input{
     width: 100%;
-    margin-top: 0.3rem;
     margin: 0 auto 1rem;
-
+    padding: 0.5rem;
+    border: 2px solid var(--color-text);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
 }
 

@@ -19,12 +19,9 @@ function Contact() {
 
     return (
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <p className='contact'>Me contacter :</p>
-
+            <p className='contact-p'>Me contacter :</p>
             <input className='contact-input' type="text" id="name" placeholder='Nom' />
-
             <input className='contact-input' type="email" id="email" placeholder='Exemple@gmail.com' />
-
             <textarea className='contact-input' name="message" rows="8" placeholder='Message' />
             <input type="submit" if="message" value="Envoyer" />
         </form>

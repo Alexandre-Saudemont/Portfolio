@@ -7,13 +7,18 @@ function AboutMe() {
     return (
         <section className='aboutme'>
             <img src={profilePic} alt="profile pic" className='aboutme-profile-pic' />
-            <h1 className='aboutme-title'>Hi ! My name is Alexandre Saudemont</h1>
+            <h1 className='aboutme-title'>Bonjour, Je suis Alexandre Saudemont </h1>
+            <h2 className='aboutme-subtitle'>Développeur Web FullStack</h2>
             <p className='aboutme-p'>
-                Après une formation de 6 mois pour devenir développeur FullStack JavaScript au sein de l'école O'Clock,
-                je suis actuellement à la recherche d'un premier emploi en tant que développeur junior.
+                J'ai étudié chez O'Clock du 17 Janvier 2022 jusqu'au 02 Juillet 2022.
             </p>
-
-
+            <p className='aboutme-p'>
+                Le programme est constitué de 3 mois de "Socle" pour apprendre les bases du développement en JavaScript,
+                un 1 de spécialisation sur React et un 1 mois de projet professionnel.
+            </p>
+            <p className='aboutme-p'>
+                J'étais développeur Front-End sur le projet professionnel.
+            </p>
         </section>
     );
 }

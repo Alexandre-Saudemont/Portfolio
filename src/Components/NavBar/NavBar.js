@@ -8,13 +8,13 @@ function NavBar() {
             <nav className='navbar'>
                 <ul className='navbar-items'>
                     <NavLink className='navbar-navlink' to="/">
-                        Home
+                        Accueil
                     </NavLink>
                     <NavLink className='navbar-navlink' to="/Projects">
-                        Projects
+                        Projets
                     </NavLink>
                     <NavLink className='navbar-navlink' to="/AboutMe">
-                        About me
+                        A propos
                     </NavLink>
                     <NavLink className='navbar-navlink' to="/Contact">
                         Contact
