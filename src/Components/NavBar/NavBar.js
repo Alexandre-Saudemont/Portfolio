@@ -1,16 +1,18 @@
-import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+
+import { NavLink } from 'react-router-dom';
 import './NavBar.css'
 
 function NavBar({ setToggleMenu }) {
+
+
 
     return (
         <div className='container-navbar'>
             <nav className='navbar'>
                 <ul className='navbar-items'>
-                    <Link className='navbar-navlink' to="/" state={{ setToggleMenu: { setToggleMenu } }}>
+                    <NavLink className='navbar-navlink' to="/" onClick={() => { setToggleMenu(false) }}>
                         Accueil
-                    </Link>
+                    </NavLink>
                     <NavLink className='navbar-navlink' to="/Projects" state={{ setToggleMenu: { setToggleMenu } }}>
                         Projets
                     </NavLink>

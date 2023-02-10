@@ -30,7 +30,7 @@
 }
 
 .aboutme-p{
-    color: var(--color-text);
+    color: var(--color-title);
     font-size: 1.3rem;
     justify-content: center;
     text-align: center; 
