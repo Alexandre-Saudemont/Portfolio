@@ -1,0 +1,16 @@
+@import url("../../asset/css/var.css");
+
+.cv-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.cv{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    margin: 1rem
+}

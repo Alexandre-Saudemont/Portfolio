@@ -5,7 +5,7 @@ import AboutMe from "../Components/AboutMe/AboutMe.js";
 import Projects from "../Components/Projects/Projects.js"
 import Contact from "../Components/Contact/Contact.js";
 import Home from "../Components/Home/Home.js";
-
+import CV from "../Components/CV/CV.js";
 // Creation du routeur pour gérer les différentes pages du site
 const router = createBrowserRouter([
     {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "Contact",
                 element: <Contact />
+            },
+            {
+                path: "CV",
+                element: <CV />
             }
         ]
     },

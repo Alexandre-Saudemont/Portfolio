@@ -12,10 +12,10 @@ function Home() {
 
             <p className='home-description'>Je suis Développeur FullStack JavaScript</p>
             <ul className='home-links'>
-                <a href="https://github.com/Alexandre-Saudemont">
+                <a href="https://github.com/Alexandre-Saudemont" target="_blank" rel="noreferrer">
                     <li><img src={github} alt="github icon" className='home-github' /></li>
                 </a>
-                <a href="https://www.linkedin.com/in/alexandre-saudemont-535481239/">
+                <a href="https://www.linkedin.com/in/alexandre-saudemont-535481239/" target="_blank" rel="noreferrer">
                     <li><img src={linkedin} alt="linkedin icon" className='home-linkedin' /></li>
                 </a>
             </ul>

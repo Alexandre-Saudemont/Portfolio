@@ -28,7 +28,11 @@ function Header() {
             </header>
             {/* Affichage conditionnel : Si  mon toggleMenu est true alors, j'affiche la NavBar */}
             {toggleMenu &&
-                <NavBar />
+                <NavBar
+
+                    setToggleMenu={setToggleMenu}
+                />
+
             }
         </>
 
