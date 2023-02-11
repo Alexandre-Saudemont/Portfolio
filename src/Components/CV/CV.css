@@ -14,3 +14,9 @@
 	width: 92%;
 	margin: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+	.cv {
+		width: 75vw;
+	}
+}
