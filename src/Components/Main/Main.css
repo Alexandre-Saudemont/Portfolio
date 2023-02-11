@@ -1,8 +1,9 @@
-.main{
-    height:92vh;
-    background-color: #f0f;
+.main {
+	height: 92vh;
+	background-color: var(--color-background-medium);
+	margin-top: 8vh;
 }
 
-.main-h1{
-    font-size: 2rem;
+.main-h1 {
+	font-size: 2rem;
 }
