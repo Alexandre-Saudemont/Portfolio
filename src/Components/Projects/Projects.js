@@ -1,11 +1,7 @@
 import React from 'react';
-
+import './Projects.css';
 function Projects() {
-    return (
-        <div>
-            <p>Je suis dans les Projects</p>
-        </div>
-    );
+	return <div></div>;
 }
 
 export default Projects;

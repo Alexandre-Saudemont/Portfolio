@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 // Outlet is used with the new React router in order to not display a blank page
 
 function App() {
+	const [toggleTrad, setToggleTrad] = useState(false);
+	console.log('toggletrad dans App', toggleTrad);
+	function onClickToggleTrad() {
+		setToggleTrad(!toggleTrad);
+	}
+
 	return (
 		<div className='App'>
-			<Header />
-			<Main />
+			<Header onClickToggleTrad={onClickToggleTrad} />
+			<Main toggleTrad={toggleTrad} />
 		</div>
 	);
 }

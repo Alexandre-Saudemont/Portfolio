@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import menuburger from '../../asset/img/menu-open-color.svg';
 import menuclose from '../../asset/img/menu-close-color.svg';
 import './Header.css';
 import NavBar from '../NavBar/NavBar';
 
-function Header() {
+function Header({onClickToggleTrad}) {
 	const [toggleMenu, setToggleMenu] = useState(false);
 
 	// On crée une fonction car en React on ne peut pas appeler le state directement dans la balise "img"
@@ -15,19 +15,22 @@ function Header() {
 	return (
 		<>
 			<header className='header'>
+				<input type='checkbox' id='switch' onClick={onClickToggleTrad} />
+				<label htmlFor='switch'></label>
+
 				<h1 className='header-title'>Portfolio</h1>
 				{/* Affichage conditionnel. Si j'ai cliqué, alors j'affiche la croix pas le burger, sinon j'affiche le burger, pas la croix. mon state  ? ma condition : l'autre condition */}
 				{toggleMenu ? (
 					<img
 						src={menuclose}
-						className='header-menuburger-close'
+						className='header-menuburger-open'
 						alt='menu burger close'
 						onClick={onClickToggleMenu}
 					/>
 				) : (
-					<img
+					<img  
 						src={menuburger}
-						className='header-menuburger-open'
+						className='header-menuburger-close'
 						alt='menu burger'
 						onClick={onClickToggleMenu}
 					/>

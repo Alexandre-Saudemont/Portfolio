@@ -2,6 +2,8 @@ import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 import chicken from '../../asset/img/chicken.gif';
+import {useOutletContext} from 'react-router-dom';
+import {useEffect} from 'react';
 
 function Contact() {
 	// A l'envoie du formulaire je dois : toggle un state
@@ -12,6 +14,7 @@ function Contact() {
 
 	const [toggleModalSuccess, setToggleModalSuccess] = useState(false);
 	const [toggleModalError, setToggleModalError] = useState(false);
+	const toggleTrad = useOutletContext;
 
 	function onClickToggleCloseModalError() {
 		setToggleModalError(!toggleModalError);
@@ -22,21 +25,22 @@ function Contact() {
 	}
 	const form = useRef();
 
-	const sendEmail = e => {
+	const sendEmail = (e) => {
 		e.preventDefault();
 
 		emailjs.sendForm('contact_service', 'template_l2nwp6s', form.current, 'Z3rh0mNjILy5GvJ3-').then(
-			result => {
+			(result) => {
 				setToggleModalSuccess(!toggleModalSuccess);
 				console.log(result.text);
 			},
-			error => {
+			(error) => {
 				setToggleModalError(!toggleModalError);
 				console.log(error.text);
 			},
 		);
 	};
 
+	useEffect(() => {}, [toggleTrad]);
 	return (
 		<form ref={form} onSubmit={sendEmail} className='contact-form'>
 			<img src={chicken} alt='chicken gif' />

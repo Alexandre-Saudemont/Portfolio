@@ -9,12 +9,12 @@ function CV() {
 	return (
 		<div>
 			{/* <div>
-                <Document file={CVpdf} >
+												<Document file={CVpdf} >		
 
-                    <Page pageNumber={1} />
-                </Document>
+														<Page pageNumber={1} />
+												</Document>
 
-            </div> */}
+										</div> */}
 			<div className='cv-container'>
 				<img src={CValex} alt='CV alex' className='cv' />
 				<a href='https://drive.google.com/file/d/1ewYRavyeQoaVFf62dfIw5sRSWk4XhbIR/view?usp=share_link' target='_blank' rel='noreferrer'>
