@@ -6,7 +6,7 @@ import linkedin from '../../asset/img/linkedin.svg';
 import {useOutletContext} from 'react-router-dom';
 
 function Home() {
-	const toggleTrad = useOutletContext();
+	const {toggleTrad} = useOutletContext();
 
 	console.log('toggletrad de Home', toggleTrad);
 	useEffect(() => {}, [toggleTrad]);

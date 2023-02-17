@@ -6,7 +6,7 @@ import Main from './Components/Main/Main';
 
 function App() {
 	const [toggleTrad, setToggleTrad] = useState(false);
-	console.log('toggletrad dans App', toggleTrad);
+
 	function onClickToggleTrad() {
 		setToggleTrad(!toggleTrad);
 	}

@@ -4,8 +4,12 @@ import profilePic from '../../asset/img/profile-pic.jpg';
 import {useOutletContext} from 'react-router-dom';
 import {useEffect} from 'react';
 import AboutMeEng from './AboutMeEng';
+
 function AboutMe() {
-	const toggleTrad = useOutletContext();
+	const {toggleTrad} = useOutletContext();
+	const {toto} = useOutletContext();
+
+	console.log('toto', toto, toggleTrad);
 
 	useEffect(() => {}, [toggleTrad]);
 	return (

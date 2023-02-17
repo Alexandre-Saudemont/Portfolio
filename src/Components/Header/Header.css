@@ -33,7 +33,7 @@ label {
 }
 
 label:after {
-	content: 'FR';
+	content: '';
 	position: absolute;
 	top: 1px;
 	left: 5px;
@@ -42,23 +42,28 @@ label:after {
 	background: #fff;
 	border-radius: 90px;
 	transition: 0.3s;
-	font-size: 1.3rem;
-	text-align: center;
+	font-size: 1rem;
+	display: block;
+	background-image: url('../../asset/img/french.png');
+	background-size: 128%;
+	background-position: center;
 }
 
 input:checked + label {
-	background: #bada55;
+	background: var(--color-text);
 }
 
 input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
-	content: 'ENG';
+
+	background-image: url('../../asset/img/english.png');
+	background-size: 140%;
+	background-position: center;
 }
 
 label:active:after {
 	width: 2rem;
-	content: 'ENG';
 }
 
 .header-title {
