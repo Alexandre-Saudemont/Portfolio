@@ -1,4 +1,3 @@
-import React, {useEffect} from 'react';
 import './Home.css';
 import profilePic from '../../asset/img/profile-picV2.jpg';
 import github from '../../asset/img/github.svg';
@@ -6,10 +5,7 @@ import linkedin from '../../asset/img/linkedin.svg';
 import {useOutletContext} from 'react-router-dom';
 
 function Home() {
-	const {toggleTrad} = useOutletContext();
-
-	console.log('toggletrad de Home', toggleTrad);
-	useEffect(() => {}, [toggleTrad]);
+	const toggleTrad = useOutletContext();
 
 	return (
 		<>

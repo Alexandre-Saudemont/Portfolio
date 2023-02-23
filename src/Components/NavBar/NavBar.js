@@ -1,7 +1,21 @@
+import {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import './NavBar.css';
 
-function NavBar({setToggleMenu}) {
+function NavBar({setToggleMenu, toggleTrad, toggleMenu}) {
+	// const toggleTrad = useOutletContext();
+
+	useEffect(() => {}, [toggleTrad]);
+	const [testCondition, setTestCondition] = useState();
+
+	// function responsive() {
+	// 	if (window.screen.width >= 1024) {
+	// 		setTestCondition(window.screen.width >= 1024);
+	// 	} else {
+	// 		setTestCondition(!toggleMenu);
+	// 	}
+	// }
+
 	return (
 		<div className='container-navbar'>
 			<nav className='navbar'>
@@ -12,7 +26,7 @@ function NavBar({setToggleMenu}) {
 						onClick={() => {
 							setToggleMenu(false);
 						}}>
-						Accueil
+						{toggleTrad ? 'Home' : 'Accueil'}
 					</NavLink>
 					<NavLink
 						className='navbar-navlink'
@@ -20,7 +34,7 @@ function NavBar({setToggleMenu}) {
 						onClick={() => {
 							setToggleMenu(false);
 						}}>
-						Projets
+						{toggleTrad ? 'Project' : 'Projet'}
 					</NavLink>
 					<NavLink
 						className='navbar-navlink'
@@ -28,7 +42,7 @@ function NavBar({setToggleMenu}) {
 						onClick={() => {
 							setToggleMenu(false);
 						}}>
-						A propos
+						{toggleTrad ? 'About Me' : 'A propos'}
 					</NavLink>
 					<NavLink
 						className='navbar-navlink'

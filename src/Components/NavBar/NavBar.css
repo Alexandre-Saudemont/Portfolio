@@ -10,6 +10,10 @@
 	z-index: 0;
 }
 
+.container-navbar-hidden {
+	display: none;
+}
+
 .navbar {
 	background-color: #042326;
 	display: flex;
@@ -35,7 +39,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-	.navbar-navlink {
-		display: contents;
+	.navbar {
+	}
+	.container-navbar {
+		position: absolute;
+		top: 8vh;
+		background-color: red;
 	}
 }

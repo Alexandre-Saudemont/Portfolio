@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-bottom: 2rem;
 }
 
 .aboutme-profile-pic {
@@ -30,13 +31,19 @@
 	padding: 2rem;
 }
 
+.aboutme-section {
+	margin-bottom: 1rem;
+	width: 90%;
+	height: auto;
+	margin-bottom: 3rem;
+}
+
 .aboutme-p {
 	color: var(--color-title);
 	font-size: 1.3rem;
 	justify-content: center;
 	text-align: center;
-	margin: 0.5rem auto;
-	padding: 0 1rem 0 1rem;
+	margin: 0.8rem auto;
 }
 
 @media screen and (min-width: 768px) {

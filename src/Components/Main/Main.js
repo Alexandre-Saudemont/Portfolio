@@ -4,8 +4,8 @@ import {Outlet} from 'react-router-dom';
 
 function Main({toggleTrad}) {
 	// pour passer plusieurs props on fait comme ça
-	const props = {toto: 'poule', toggleTrad};
-
+	// const props = {toto: 'poule', toggleTrad};
+	const props = toggleTrad;
 	return (
 		<main className='main'>
 			{/* Outlet affiche les enfant de main */}

@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<Header onClickToggleTrad={onClickToggleTrad} />
+			<Header onClickToggleTrad={onClickToggleTrad} toggleTrad={toggleTrad} />
 			<Main toggleTrad={toggleTrad} />
 		</div>
 	);

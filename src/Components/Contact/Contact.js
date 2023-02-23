@@ -3,19 +3,12 @@ import emailjs from '@emailjs/browser';
 import './Contact.css';
 import chicken from '../../asset/img/chicken.gif';
 import {useOutletContext} from 'react-router-dom';
-import {useEffect} from 'react';
 
 function Contact() {
-	// A l'envoie du formulaire je dois : toggle un state
-	// Avec le toggle, je fais un affichage conditionnel
-	// DANS l'affichage conditionnel je fais mon composant modal
-	// dans mon composant modal, je dois mettre un button qui dois faire l'inverse du toggle pour fermer la modal
-	// au click de l'envoie du formulaire, je dois vider mon formulaire
-
 	const [toggleModalSuccess, setToggleModalSuccess] = useState(false);
 	const [toggleModalError, setToggleModalError] = useState(false);
-	const toggleTrad = useOutletContext;
 
+	const toggleTrad = useOutletContext();
 	function onClickToggleCloseModalError() {
 		setToggleModalError(!toggleModalError);
 	}
@@ -40,32 +33,69 @@ function Contact() {
 		);
 	};
 
-	useEffect(() => {}, [toggleTrad]);
+	// useEffect(() => {}, [toggleTrad]);
 	return (
 		<form ref={form} onSubmit={sendEmail} className='contact-form'>
 			<img src={chicken} alt='chicken gif' />
-			<p className='contact-p'>Me contacter :</p>
-			<input className='contact-input' type='text' id='name' placeholder='Nom' />
+			{toggleTrad ? (
+				<>
+					<p className='contact-p'> Contact me:</p>
+					<input className='contact-input' type='text' id='name' placeholder='Name' />
+				</>
+			) : (
+				<>
+					<p className='contact-p'>Me contacter:</p>
+					<input className='contact-input' type='text' id='name' placeholder='Nom' />
+				</>
+			)}
+
 			<input className='contact-input' type='email' id='email' placeholder='Exemple@gmail.com' />
 			<textarea className='contact-input' name='message' rows='8' placeholder='Message' />
-			<input type='submit' if='message' value='Envoyer' className='contact-button' />
+			{toggleTrad ? (
+				<input type='submit' if='message' value='Send' className='contact-button' />
+			) : (
+				<input type='submit' if='message' value='Envoyer' className='contact-button' />
+			)}
+
 			{toggleModalError && (
 				<div className='contact-container'>
 					<div className='contact-container-modal'>
-						<p className='contact-modal-error'>Une erreur est survenu, votre message n'à pas été envoyé</p>
-						<button type='button' className='contact-button' onClick={onClickToggleCloseModalError}>
-							Fermer
-						</button>
+						{toggleTrad ? (
+							<>
+								<p className='contact-modal-error'>An error as occured, your message hasn't been send</p>
+								<button type='button' className='contact-button' onClick={onClickToggleCloseModalError}>
+									Close
+								</button>
+							</>
+						) : (
+							<>
+								<p className='contact-modal-error'>Une erreur est survenu, votre message n'à pas été envoyé</p>
+								<button type='button' className='contact-button' onClick={onClickToggleCloseModalError}>
+									Fermer
+								</button>
+							</>
+						)}
 					</div>
 				</div>
 			)}
 			{toggleModalSuccess && (
 				<div className='contact-container'>
 					<div className='contact-container-modal'>
-						<p className='contact-modal-success'>Votre message à bien été envoyé.</p>
-						<button type='button' className='contact-button' onClick={onClickToggleCloseModalSuccess}>
-							Fermer
-						</button>
+						{toggleTrad ? (
+							<>
+								<p className='contact-modal-success'>Your message has been sent</p>
+								<button type='button' className='contact-button' onClick={onClickToggleCloseModalSuccess}>
+									Close
+								</button>
+							</>
+						) : (
+							<>
+								<p className='contact-modal-success'>Votre message à bien été envoyé.</p>
+								<button type='button' className='contact-button' onClick={onClickToggleCloseModalSuccess}>
+									Fermer
+								</button>
+							</>
+						)}
 					</div>
 				</div>
 			)}
