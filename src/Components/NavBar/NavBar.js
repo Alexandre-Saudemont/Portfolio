@@ -6,7 +6,7 @@ function NavBar({setToggleMenu, toggleTrad, toggleMenu}) {
 	// const toggleTrad = useOutletContext();
 
 	useEffect(() => {}, [toggleTrad]);
-	const [testCondition, setTestCondition] = useState();
+	// const [testCondition, setTestCondition] = useState();
 
 	// function responsive() {
 	// 	if (window.screen.width >= 1024) {
