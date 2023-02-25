@@ -20,3 +20,10 @@
 		width: 75vw;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.cv {
+		max-width: 20rem;
+		padding-top: 1.5rem;
+	}
+}

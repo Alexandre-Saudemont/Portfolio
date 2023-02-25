@@ -83,3 +83,18 @@
 		font-size: 1.7rem;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.contact-form {
+		width: 30%;
+		height: 100%;
+		padding-top: 1rem;
+	}
+
+	.contact-p {
+		margin: 0.5rem auto;
+	}
+	.contact-button {
+		margin-bottom: 2rem;
+	}
+}

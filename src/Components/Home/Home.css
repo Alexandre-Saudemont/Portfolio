@@ -39,3 +39,12 @@
 	width: 2.7rem;
 	margin-left: 2rem;
 }
+
+@media screen and (min-width: 1024px) {
+	.home {
+	}
+
+	.home-description {
+		margin: 3rem auto;
+	}
+}

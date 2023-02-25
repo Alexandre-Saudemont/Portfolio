@@ -11,12 +11,13 @@ function Header({onClickToggleTrad, toggleTrad}) {
 	function onClickToggleMenu() {
 		setToggleMenu(!toggleMenu);
 	}
-	const device = window.navigator.userAgent;
-	console.log('wind', device);
+	// const device = window.navigator.userAgent;
+	// console.log('wind', device);
+
 	useEffect(() => {
-		if (window.screen.width >= 1024) {
-			setToggleMenu(true);
-		}
+		// if (window.screen.width >= 1024) {
+		// 	setToggleMenu(true);
+		// }
 	}, [toggleMenu]);
 
 	return (
