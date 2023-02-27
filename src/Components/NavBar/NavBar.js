@@ -1,8 +1,8 @@
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import './NavBar.css';
 
-function NavBar({setToggleMenu, toggleTrad, toggleMenu}) {
+function NavBar({setToggleMenu, toggleTrad}) {
 	// const toggleTrad = useOutletContext();
 
 	useEffect(() => {}, [toggleTrad]);
