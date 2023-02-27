@@ -1,0 +1,29 @@
+@import url('../../asset/css/var.css');
+
+.cv-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	flex-direction: column;
+}
+
+.cv {
+	display: flex;
+	flex-direction: column;
+	width: 92%;
+	margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.cv {
+		width: 75vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.cv {
+		max-width: 20rem;
+		padding-top: 1.5rem;
+	}
+}

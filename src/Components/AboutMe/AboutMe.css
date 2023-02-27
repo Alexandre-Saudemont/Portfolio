@@ -1,0 +1,64 @@
+@import url('../../asset/css/var.css');
+
+.aboutme {
+	background-color: var(--color-background-medium);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 2rem;
+}
+
+.aboutme-profile-pic {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	width: 13rem;
+	height: 15rem;
+}
+
+.aboutme-title {
+	font-size: 2.3rem;
+	color: var(--color-text);
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 1rem;
+}
+
+.aboutme-subtitle {
+	font-size: 1.8rem;
+	color: var(--color-text);
+	padding: 2rem;
+}
+
+.aboutme-section {
+	margin-bottom: 1rem;
+	width: 90%;
+	height: auto;
+	margin-bottom: 3rem;
+}
+
+.aboutme-p {
+	color: var(--color-title);
+	font-size: 1.3rem;
+	justify-content: center;
+	text-align: center;
+	margin: 0.8rem auto;
+}
+
+@media screen and (min-width: 768px) {
+	.aboutme {
+		width: 100%;
+		padding: 2rem;
+	}
+
+	.aboutme-title {
+		font-size: 3rem;
+	}
+	.aboutme-subtitle {
+		font-size: 2.5rem;
+	}
+	.aboutme-p {
+		font-size: 2rem;
+	}
+} ;

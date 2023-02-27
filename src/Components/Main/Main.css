@@ -1,0 +1,15 @@
+.main {
+	height: 92vh;
+	background-color: var(--color-background-medium);
+	margin-top: 8vh;
+}
+
+.main-h1 {
+	font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.main {
+		height: 92vh;
+	}
+}

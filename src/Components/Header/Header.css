@@ -1,0 +1,113 @@
+@import url('../../asset/css/var.css');
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 8vh;
+	background-color: var(--color-background-dark);
+	z-index: 1;
+	position: fixed;
+}
+
+/* CSS pour le toggle boutton  pour changer de langue */
+
+input[type='checkbox'] {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	width: 4rem;
+	height: 2rem;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 1rem;
+	background-color: var(--color-text);
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	width: 2rem;
+	height: 1.8rem;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+	font-size: 1rem;
+	display: block;
+	background-image: url('../../asset/img/french.png');
+	background-size: 128%;
+	background-position: center;
+}
+
+input:checked + label {
+	background: var(--color-text);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+
+	background-image: url('../../asset/img/english.png');
+	background-size: 140%;
+	background-position: center;
+}
+
+label:active:after {
+	width: 2rem;
+}
+
+.header-title {
+	font-size: 2rem;
+	color: var(--color-title);
+}
+
+.header-menuburger-open {
+	position: fixed;
+	width: 3rem;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
+.header-menuburger-close {
+	position: fixed;
+	width: 2.8rem;
+	top: 0.5 rem;
+	right: 0.6rem;
+}
+
+.header-menuburger:hover {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+	.header-menuburger-open {
+		width: 2.5rem;
+		top: 0.3rem;
+		right: 0.5rem;
+	}
+	.header-menuburger-close {
+		width: 2.5rem;
+		top: 0.3rem;
+		right: 0.5rem;
+	}
+
+	input:checked + label {
+		background: var(--color-text);
+		margin: 0.6rem;
+	}
+
+	label {
+		margin: 0.6rem;
+	}
+}

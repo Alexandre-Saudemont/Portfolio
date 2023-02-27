@@ -1,0 +1,50 @@
+.home {
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.home-title {
+	margin-bottom: 3rem;
+	font-size: 2.3rem;
+	color: var(--color-text);
+}
+
+.home-profile-pic {
+	width: 15rem;
+	border-radius: 50%;
+}
+
+.home-description {
+	font-size: 1.7rem;
+	margin: 5rem;
+	color: var(--color-text);
+}
+
+.home-links {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.home-github {
+	width: 3rem;
+}
+
+.home-linkedin {
+	width: 2.7rem;
+	margin-left: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.home {
+	}
+
+	.home-description {
+		margin: 3rem auto;
+	}
+}
