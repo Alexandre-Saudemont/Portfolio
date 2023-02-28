@@ -1,6 +1,7 @@
 import React from 'react';
 import {useOutletContext} from 'react-router-dom';
 import './Projects.css';
+
 function Projects() {
 	const toggleTrad = useOutletContext();
 	return (
