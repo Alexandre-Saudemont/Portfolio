@@ -8,6 +8,13 @@
 	flex-direction: column;
 }
 
+.cv-img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .cv {
 	display: flex;
 	flex-direction: column;

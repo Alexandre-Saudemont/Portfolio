@@ -5,4 +5,62 @@
 	height: 100%;
 	color: var(--color-text);
 	font-size: 3rem;
+	flex-wrap: wrap;
+}
+
+.project {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 1rem;
+}
+
+.projet-pokedeck {
+	text-align: center;
+	padding-top: 3rem;
+}
+
+.project-button-container {
+	display: flex;
+}
+.project-button {
+	color: var(--color-title);
+	background-color: #04bf9d;
+	border: 2px solid var(--color-text);
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.project-button-container {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+	}
+
+	.project-button {
+		font-size: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.project-container {
+		width: 40%;
+		margin: auto;
+	}
+
+	.projet-pokedeck {
+		width: 100%;
+		text-align: center;
+	}
+	.project-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1rem;
+	}
 }
